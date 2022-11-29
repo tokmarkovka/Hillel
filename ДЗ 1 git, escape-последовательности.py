@@ -25,12 +25,13 @@ print('\n')
 print('Задание 5\n')
 # программа, которая выводит в консоль таблицу Escape-последовательностей:
 
-esc1 = '\\a   Bell (alert)'
-esc2 = '\\b   Backspace'
-esc3 = '\\n   New line'
-esc4 = '\\t   Horizontal tab'
-esc5 = '\\\\   Backslash \\'
-esc6 = '\\\"   Double quotation mark \"'
-esc7 = "\\\'   Single quotation mark \'"
+print('Escape sequences:')
+esc1 = '\\a\t\tBell (alert)'
+esc2 = '\\b\t\tBackspace'
+esc3 = '\\n\t\tNew line'
+esc4 = '\\t\t\tHorizontal tab'
+esc5 = '\\\\\t\tBackslash \\'
+esc6 = '\\\"\t\tDouble quotation mark \"'
+esc7 = "\\\'\t\tSingle quotation mark \'"
 
 print(esc1, esc2, esc3, esc4, esc5, esc6, esc7, sep='\n')
