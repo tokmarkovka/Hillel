@@ -16,8 +16,7 @@ print('my_list length:', len(my_list))
 
 if len(my_list) < 2:
     my_list.append(0)
-    print(my_list)
+    print('Новый список: ', my_list)
 elif len(my_list) >= 2:
     my_list.append(my_list[-1] + my_list[-2])
-    print(my_list)
-
+    print('Новый список: ', my_list)

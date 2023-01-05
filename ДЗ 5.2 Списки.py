@@ -9,9 +9,10 @@ import random
 
 my_list = [random.randint(1, 200) for numbers in range(25)]
 my_results = []
-print('my_list', my_list)
+print('Начальный список:\n', my_list)
 
+print("Список с значениями, которые больше 100:")
 for numbers in my_list:
     if numbers > 100:
         my_results.append(numbers)
-print('my_results', my_results)
+print(my_results)

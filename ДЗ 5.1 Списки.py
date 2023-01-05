@@ -7,7 +7,9 @@ import random
 # сгенерируем список из 30 случайных чисел в диапазоне от 1 до 299
 
 my_list = [random.randint(1, 300) for numbers in range(30)]
-print('my_list', my_list)
+print('Начальный список:\n', my_list)
+
+print("Значения, которые больше 100:")
 for numbers in my_list:
     if numbers > 100:
         print(numbers, end=' ')

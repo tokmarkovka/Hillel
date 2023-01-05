@@ -15,21 +15,23 @@ import random
 
 my_list = [random.randint(1, 200) for numbers in range(7)]
 
-# генерируем случайный индек (k)
+# генерируем случайный индекс (k)
 
-k = random.randrange(0, 7)
+k = random.randrange(0, len(my_list))
 
-print(my_list)
-print(k)
+print('Начальный список:\n', my_list)
+print('Случайный индекс:', k)
 
 # все элементы, начиная с элемента, имеющего индекс k, заканчивая последним, меняем на те же элементы, начиная
 # со следующего элемента после k и до конца
 
 my_list[k:len(my_list)] = my_list[k+1:len(my_list)]
-print(my_list)
+print(f'Список без элемента с индексом {k}, сдвинутый влево :\n', my_list)
 
 # удаляем последний єлемент списка
 
 my_list.pop()
-print(my_list)
+print('Список c удаленным последним элементом :\n', my_list)
+
+
 
