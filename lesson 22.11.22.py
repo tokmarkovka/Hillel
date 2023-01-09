@@ -22,4 +22,3 @@ some_string2 = '"my awesome\' string"'
 print(some_string2)
 some_string3 = '"my\n awe\tsome\b string"'
 print(some_string3)
-
