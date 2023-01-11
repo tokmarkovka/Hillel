@@ -1,20 +1,63 @@
 # 1)Дан список словарей persons в формате [{"name": "John", "age": 15}, ... ,{"name": "Jack", "age": 45}]
-#     а) Создать список и поместить туда имя самого молодого человека.
-#         Если возраст совпадает - поместить все имена самых молодых.
-#     б) Создать список и поместить туда самое длинное имя. Если длина имени совпадает - поместить все такие имена.
-#     в) Посчитать среднее количество лет всех людей из начального списка.
 
 persons = [
     {"name": "John", "age": 15},
     {"name": "Alice", "age": 27},
     {"name": "Mary", "age": 90},
     {"name": "Stacy", "age": 33},
-    {"name": "Jack", "age": 45}
+    {"name": "Jack", "age": 15}
 ]
 
-list_with_youngest_person = []
-print(persons[-1])
-print(*persons)
+# а) Создать список и поместить туда имя самого молодого человека.
+# Если возраст совпадает - поместить все имена самых молодых.
+
+# list_of_youngest_people = []
+# min_age = 300
+# for age in persons:
+#     if min_age > age['age']:
+#         min_age = age['age']
+# for age in persons:
+#     if min_age == age['age']:
+#         list_of_youngest_people.append(age['name'])
+# print('Список самых молодых: ', list_of_youngest_people)
+
+min_age = min(age['age'] for age in persons)
+print('Минимальный возраст: ', min_age)
+list_of_youngest_people = [age['name'] for age in persons if age['age'] == min_age]
+print('Список самых молодых: ', list_of_youngest_people)
+
+# б) Создать список и поместить туда самое длинное имя.
+# Если длина имени совпадает - поместить все такие имена.
+
+list_of_longest_names = []
+longest_name = 0
+for l_name in persons:
+    if longest_name < len(l_name['name']):
+        longest_name = len(l_name['name'])
+for l_name in persons:
+    if longest_name == len(l_name['name']):
+        list_of_longest_names.append(l_name['name'])
+
+print('Максимальная длина имени: ', longest_name)
+print('Список самых длинных имен: ', list_of_longest_names)
+
+max_name_len = max(age['age'] for age in persons)
+print('Максимальная длина имени: ', max_name_len)
+list_of_longest_names = [age['name'] for age in persons if age['age'] == max_name_len]
+print('Список самых длинных имен: ', list_of_longest_names)
+
+# в) Посчитать среднее количество лет всех людей из начального списка.
+
+# for age in persons:
+#     average_number_of_years = sum(persons['age'])
+
+# print(*persons)
+# dict_persons = dict(persons)
+#
+# print('dict_persons', dict_persons['name'])
+# list_with_youngest_person = []
+# print(persons[-1])
+# print(*persons)
 # for name in persons:
 #     print(age.values(), end=' ')
 #
