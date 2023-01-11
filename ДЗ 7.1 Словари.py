@@ -4,7 +4,7 @@ persons = [
     {"name": "John", "age": 15},
     {"name": "Alice", "age": 27},
     {"name": "Mary", "age": 90},
-    {"name": "Stacy", "age": 33},
+    {"name": "Stacy", "age": 32},
     {"name": "Jack", "age": 15}
 ]
 
@@ -47,6 +47,16 @@ list_of_longest_names = [age['name'] for age in persons if age['age'] == max_nam
 print('Список самых длинных имен: ', list_of_longest_names)
 
 # в) Посчитать среднее количество лет всех людей из начального списка.
+
+average_age_list = []
+for age in persons:
+    if age in persons:
+        average_age_list.append(age['age'])
+print('Список всех возрастов: ', average_age_list)
+print('Cреднее количество лет всех людей: ', sum(average_age_list)/len(average_age_list))
+print('Cреднее количество полных лет всех людей: ', int(sum(average_age_list)/len(average_age_list)))
+
+
 
 # for age in persons:
 #     average_number_of_years = sum(persons['age'])
