@@ -11,4 +11,3 @@ my_list_2 = ['Шла Саша по шоссе', 3, 0, 777, [1, 2, 3], 999]
 my_result = my_list_1[1::2] + my_list_2[0::2]
 
 print('my_result:', my_result)
-
