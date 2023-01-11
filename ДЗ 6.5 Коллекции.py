@@ -13,3 +13,8 @@ print('my_list, при помощи pop: ', my_list)
 
 my_list[0], my_list[-1] = my_list[-1], my_list[0]
 print('my_list с заменой значений по индексам: ', my_list)
+
+# варианты, расмотренные на практике
+# my_list = [1, 2, 3, 4]
+# my_list.append(my_list.pop(0))
+# print(my_list)
