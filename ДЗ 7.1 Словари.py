@@ -41,10 +41,12 @@ for l_name in persons:
 print('Максимальная длина имени: ', longest_name)
 print('Список самых длинных имен: ', list_of_longest_names)
 
-max_name_len = max(age['age'] for age in persons)
-print('Максимальная длина имени: ', max_name_len)
-list_of_longest_names = [age['name'] for age in persons if age['age'] == max_name_len]
-print('Список самых длинных имен: ', list_of_longest_names)
+# в пайтон стайле не получилось
+
+# max_name_len = max(age['age'] for age in persons)
+# print('Максимальная длина имени: ', max_name_len)
+# list_of_longest_names = [age['name'] for age in persons if age['age'] == max_name_len]
+# print('Список самых длинных имен: ', list_of_longest_names)
 
 # в) Посчитать среднее количество лет всех людей из начального списка.
 
